@@ -1,11 +1,9 @@
 # Directus Chat Assistant Extension
 ## Overview
-This Directus extension integrates a Chat Assistant prototype, providing an interactive and intuitive way to query and manage your Directus collections. Leveraging the `tools_call` functionality, it enables reading items from Directus collections using the `readByQuery` method of the `ItemsService`.
+Directus Assistant allows you to manage your CMS in the simplest way possible. GPT-4 is capable of creating functionalities for which the CMS is not prepared. An example would be telling the wizard to merge some duplicate items and delete the rest.
 
 ## Features
-* **Chat Assistant Interface**: Interact with Directus through a conversational UI.
-* **Query Collection Items**: Ask the assistant to fetch the latest items from your collections, such as retrieving the last registered car in the "cars" collection.
-* **OpenAI Integration**: Powered by OpenAI, ensuring accurate and context-aware responses.
+* **ItemsService:** The main functionalities of ItemsService have been mapped to be able to manage the content of the collections.
 
 ## Screenshots
 - Chat Assistant Interface: 
