@@ -1,6 +1,13 @@
 import type { Knex } from "knex";
+import { Logger } from "pino";
 
-export async function prepareAssistantSchema(database: Knex<any, any[]>) {
+export async function prepareAssistantSchema({
+  database,
+  logger,
+}: {
+  database: Knex<any, any[]>;
+  logger: Logger;
+}) {
   try {
     // TODO: Use migrations system instead
     // await database.schema.dropTableIfExists("assistant_chat");

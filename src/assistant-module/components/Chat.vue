@@ -50,7 +50,6 @@ export default defineComponent({
             sendingMessage.value = true;
             conversation.value.push({ content: message, created_at: new Date().toString(), id: -1, role: 'user', user: '' })
             const response = await api.post('/assistant/send', { content: message })
-            console.log('assistant response', response.data);
             sendingMessage.value = false;
             conversation.value.splice(conversation.value.length - 1, 1);
             const { ok, data } = response.data;
