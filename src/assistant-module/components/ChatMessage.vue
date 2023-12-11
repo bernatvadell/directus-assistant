@@ -47,7 +47,8 @@
     background: var(--theme--navigation--background);
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
-    /* user-select: text; */
+    user-select: text;
+    white-space: pre-wrap;
 }
 
 .message.message-user .content {
