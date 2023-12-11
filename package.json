@@ -1,9 +1,14 @@
 {
 	"name": "directus-extension-assistant",
-	"version": "1.0.0",
+	"version": "0.0.3",
 	"type": "module",
-	"description": "Please enter a description for your extension",
+	"description": "A powerful Directus extension leveraging GPT-4 AI to simplify CMS management and automate complex tasks with intuitive AI commands.",
 	"icon": "extension",
+	"files": [
+		"dist/",
+		"README.md",
+		"screenshots"
+	],
 	"directus:extension": {
 		"host": "^10.2.0",
 		"type": "bundle",
@@ -27,7 +32,11 @@
 	"keywords": [
 		"directus",
 		"directus-extension",
-		"directus-custom-bundle"
+		"directus-custom-bundle",
+		"gpt-4",
+		"openai",
+		"cms-automation",
+		"ai-assistant"
 	],
 	"scripts": {
 		"build": "directus-extension build",

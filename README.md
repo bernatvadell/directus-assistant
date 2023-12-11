@@ -1,6 +1,10 @@
 # Directus Chat Assistant Extension
 ## Overview
-Directus Assistant allows you to manage your CMS in the simplest way possible. GPT-4 is capable of creating functionalities for which the CMS is not prepared. An example would be telling the wizard to merge some duplicate items and delete the rest.
+Directus Assistant revolutionizes the way you manage your CMS, harnessing the power of OpenAI's GPT-4 to expand beyond traditional capabilities. This innovative tool empowers users with the ability to execute complex functions seamlessly, even those not natively supported by the CMS.
+
+Imagine effortlessly instructing the Assistant to identify and merge duplicate items, and then to remove any redundancies – tasks that typically require intricate manual processes or advanced programming skills. With Directus Assistant, these actions are simplified into intuitive commands, making CMS management more efficient and user-friendly.
+
+By leveraging the cutting-edge AI of GPT-4, Directus Assistant not only enhances your productivity but also unlocks new possibilities for content management, offering a glimpse into the future of AI-assisted digital administration.
 
 ## Features
 * **ItemsService:** The main functionalities of ItemsService have been mapped to be able to manage the content of the collections.
@@ -14,6 +18,13 @@ Directus Assistant allows you to manage your CMS in the simplest way possible. G
 ![ Collection Items List](/screenshots/tools_call.jpg)
 
 ## Setup and Configuration
+### As package npm setup
+See this "how to" provided by Directus:
+https://docs.directus.io/extensions/installing-extensions.html#installing-through-npm
+
+Package name: directus-extension-assistant
+
+### Local setup
 To get started with this extension, follow the steps below:
 
 1. Clone the Repository:
