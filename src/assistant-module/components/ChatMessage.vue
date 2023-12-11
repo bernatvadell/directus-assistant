@@ -6,13 +6,11 @@
                 <v-icon v-else :name="message.role === 'assistant' ? 'support_agent' : 'person'" />
             </div>
         </div>
-        <div class="content">
-            {{ message.content }}
+        <div class="content" v-html="htmlContent">
         </div>
     </div>
 </template>
-
-<style scoped>
+<style>
 .message {
     display: flex;
     flex-direction: row;
@@ -48,7 +46,17 @@
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     user-select: text;
+}
+
+.message .content p {
     white-space: pre-wrap;
+}
+
+.message .content pre {
+    background: var(--theme--navigation--modules--background) !important;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
 }
 
 .message.message-user .content {
@@ -62,7 +70,6 @@
 
 <script setup lang="ts">
 import { Message } from '../interfaces'
-
 defineProps<{
     message: Message;
 }>()
@@ -70,12 +77,16 @@ defineProps<{
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import * as marked from 'marked';
 
 export default defineComponent({
     data({ message }) {
         const sending = message.id === -1;
+        const htmlContent = marked.parse(message.content);
+
         return {
             message,
+            htmlContent,
             sending
         };
     }

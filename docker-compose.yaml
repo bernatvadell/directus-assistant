@@ -9,6 +9,7 @@ services:
       - uploads:/directus/uploads
       - ./:/directus/extensions/directus-extension-assistant
     environment:
+      PUBLIC_URL: http://localhost:8055
       KEY: "replace-with-random-value"
       SECRET: "replace-with-random-value"
       ADMIN_EMAIL: "admin@example.com"

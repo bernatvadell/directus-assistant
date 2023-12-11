@@ -8,6 +8,9 @@ dependencies:
   json-schema:
     specifier: ^0.4.0
     version: 0.4.0
+  marked:
+    specifier: ^11.0.1
+    version: 11.0.1
   openai:
     specifier: ^4.20.1
     version: 4.20.1
@@ -2153,6 +2156,12 @@ packages:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
+
+  /marked@11.0.1:
+    resolution: {integrity: sha512-P4kDhFEMlvLePBPRwOcMOv6+lYUbhfbSxJFs3Jb4Qx7v6K7l+k8Dxh9CEGfRvK71tL+qIFz5y7Pe4uzt4+/A3A==}
+    engines: {node: '>= 18'}
+    hasBin: true
+    dev: false
 
   /md5@2.3.0:
     resolution: {integrity: sha512-T1GITYmFaKuO91vxyoQMFETst+O71VUPEU3ze5GNzDm0OWdP8v1ziTaAEPUr/3kLsY3Sftgz242A1SetQiDL7g==}

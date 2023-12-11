@@ -119,13 +119,15 @@ export default defineEndpoint({
         const gptMessages: any[] = [
           {
             role: "system",
-            content: `You are an assistant integrated into Directus.
-            You have access to its main features thanks to the registered functions.
-            When a function requires a payload for a collection, you must base the construction of the object on the following scheme:\n${JSON.stringify(
+            content: `You are an assistant integrated into Directus. You will also clearly and concisely resolve technical doubts regarding the integration of Directus into the user's projects.
+Directus base url (public url): ${process.env.PUBLIC_URL ?? "http://localhost:8055"}
+You have access to its main features thanks to the registered functions.
+When a function requires a payload for a collection, you must base the construction of the object on the following scheme:\n${JSON.stringify(
               simplifiedSchema,
               undefined,
               0
-            )}`,
+            )}
+Respond in MARKDOWN format.`,
           },
           ...conversationMessages.map((x) => ({
             role: x.role,

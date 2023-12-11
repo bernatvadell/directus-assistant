@@ -27,7 +27,9 @@
     padding: 0 2rem;
     gap: 2rem;
     flex: 1;
+    overflow-x: hidden;
     overflow-y: auto;
+    padding-bottom: 2rem;
 }
 </style>
 
